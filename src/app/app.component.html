@@ -1,2 +1,8 @@
-<h1>Zander Cadiz</h1>
-<post-create> </post-create>
+<app-header>
+    <h1>Zander Cadiz</h1>
+</app-header>
+<main>
+    <app-post-create (postCreated)="onPostAdded($event)"></app-post-create>
+    <app-post-list [post]="storedPosts"></app-post-list>
+
+</main>

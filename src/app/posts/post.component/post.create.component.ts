@@ -10,9 +10,12 @@ export class PostCreateComponent{
 
     NewPost = '';
     enteredValue = '';
+    enteredContent ='';
+    enteredTitle = '';
 NewInput: any;
     onAddPost(){
         this.NewPost = this.enteredValue;
     }
     
+   
 }

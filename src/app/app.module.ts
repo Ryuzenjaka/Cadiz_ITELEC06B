@@ -10,11 +10,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { HeaderComponent } from './header/header.component';
+import { PostListComponent } from './posts/post-list/post-list.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostCreateComponent
+    PostCreateComponent,
+    HeaderComponent,
+    PostListComponent
+
   ],
   imports: [
     BrowserModule,
@@ -23,7 +34,13 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatDividerModule,
+    MatToolbarModule,
+    MatExpansionModule,
+    MatListModule
+
+    
     
   ],
   providers: [],
