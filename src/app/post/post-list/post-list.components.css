@@ -1,0 +1,90 @@
+/* 🌟 General Card Styling */
+.custom-card {
+    max-width: 600px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* 📝 Expansion Panel Styling */
+.custom-expansion-panel {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-expansion-panel:hover {
+    background-color: #E3F2FD;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* 📌 Expansion Panel Header */
+mat-expansion-panel-header {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+/* 📄 Post Content */
+.post-content {
+    font-size: 14px;
+    color: #555;
+    padding: 10px;
+}
+
+/* ❗ No Posts Message */
+.no-posts {
+    color: #888;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* 🔘 Action Buttons */
+.action-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.edit-button {
+    background: linear-gradient(120deg, #007BFF, #0056D2);
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.edit-button:hover {
+    background: linear-gradient(120deg, #0056D2, #003E99);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.delete-button {
+    background: linear-gradient(120deg, #FF3B3B, #D60000);
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+    background: linear-gradient(120deg, #D60000, #990000);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}

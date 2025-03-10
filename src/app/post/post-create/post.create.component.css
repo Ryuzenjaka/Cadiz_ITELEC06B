@@ -1,67 +1,75 @@
-General styling for the container
+/* General styling for the container */
 mat-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 480px;
     margin: 20px auto;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Style for the form field */
+/* Form field */
 mat-form-field {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
+/* Input & Textarea */
 textarea {
     width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: none;
-    box-sizing: border-box;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    color: white;
+    transition: all 0.3s ease;
 }
 
-/* Raised button styling */
+textarea:focus {
+    border-color: #ffffff;
+}
+
+/* Button */
 button[mat-raised-button] {
-    background-color: #0094ea;
+    background: rgba(0, 150, 255, 0.3);
     color: white;
-    padding: 10px 20px;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
 }
 
 button[mat-raised-button]:hover {
-    background-color: #005aea;
+    background: rgba(0, 150, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 12px rgba(0, 150, 255, 0.5);
 }
 
-/* Divider (horizontal rule) */
+
+/* Divider */
 hr {
-    margin: 20px 0;
-    border: 1px solid #ddd;
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
 }
 
-/* Styled textarea for displaying new post */
-textarea {
-    width: 100%;
-    max-width: 500px;
-    height: 150px;
-    margin: 20px auto;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: none;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+/* Readonly textarea */
+textarea[readonly] {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
 }
