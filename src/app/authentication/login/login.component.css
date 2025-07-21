@@ -1,0 +1,70 @@
+/* Center the login card */
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f5f7fa, #e8f0fe);
+}
+
+/* Card design */
+mat-card {
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+}
+
+/* Input fields */
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+mat-form-field.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Button */
+button[mat-raised-button] {
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #43cea2, #185a9d); /* green-blue gradient */
+  color: white;
+  transition: background 0.3s ease;
+}
+
+button[mat-raised-button]:hover {
+  background: linear-gradient(to right, #3cb78c, #154a89);
+}
+
+/* Spinner container */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+/* Signup link */
+.signup-link {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-link a {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

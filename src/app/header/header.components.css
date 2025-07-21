@@ -1,0 +1,66 @@
+header {
+  background: linear-gradient(to right, #185a9d, #43cea2); /* blue-green gradient */
+  padding: 12px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation List */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+}
+
+/* Navigation Items */
+ul li {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation Links and Buttons */
+a,
+button {
+  font-weight: 500;
+  text-transform: none;
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Material-style Buttons */
+a.mat-button,
+button[mat-button] {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+a.mat-button:hover,
+button[mat-button]:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Remove underline and keep white color */
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Optional: Add subtle border to highlight active route */
+a.router-link-active {
+  border-bottom: 2px solid white;
+}
