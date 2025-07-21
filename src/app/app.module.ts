@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -29,20 +30,39 @@ import { MatDialogModule } from '@angular/material/dialog';  // <-- Add MatDialo
 // Import AuthInterceptor
 import { AuthInterceptor } from './authentication/auth-interceptor';
 import { ErrorComponent } from './error/error.component';
+=======
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { PostCreateComponent } from './posts/post.component/post.create.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+>>>>>>> b712274d0e1bcf6e8250d3949d2f2f47a0d28428
 
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
     PostCreateComponent,
     HeaderComponent,
     PostListComponent,
     LoginComponent,
     SignupComponent,
     ErrorComponent
+=======
+    PostCreateComponent
+>>>>>>> b712274d0e1bcf6e8250d3949d2f2f47a0d28428
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
@@ -66,3 +86,16 @@ import { ErrorComponent } from './error/error.component';
   bootstrap: [AppComponent]
 })
 export class AppModule {}
+=======
+    FormsModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatFormFieldModule
+    
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+>>>>>>> b712274d0e1bcf6e8250d3949d2f2f47a0d28428
